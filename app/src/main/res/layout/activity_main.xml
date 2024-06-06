@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_app"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations! 🎉"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All necessary permissions have been granted.\nYou can now fully utilize all features of the application."
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/main_LBL_header"
+        android:textSize="20sp"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_LBL_message"
+        android:text="Exit"
+        android:fontFamily="@font/font"
+        android:background="@drawable/button_style"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/darkGreen"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"/>
+
+
+
+</RelativeLayout>

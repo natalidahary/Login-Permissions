@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_app"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_LBL_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Permissions"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:textColor="@color/darkGreen" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_RECORD_AUDIO_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_LBL_header"
+        android:layout_marginTop="60dp"
+        android:text="Record Audio Permission"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cream" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_IMG_microphone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/microphone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_BTN_RECORD_AUDIO_permissions"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_CALENDAR_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_IMG_microphone"
+        android:layout_marginTop="20dp"
+        android:text="Calendar Permission"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cream" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_IMG_calender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/calender"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_BTN_CALENDAR_permissions"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_CAMERA_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_IMG_calender"
+        android:layout_marginTop="20dp"
+        android:text="Camera Permission"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cream" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/login_IMG_camera"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/camera"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_BTN_CAMERA_permissions"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_IMG_camera"
+        android:layout_marginTop="60dp"
+        android:text="Sign In"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/darkGreen" />
+</RelativeLayout>
